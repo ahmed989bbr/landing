@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Inter&family=Readex+Pro&family=Roboto+Slab:wght@300;400;900&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    /* تم تغييرها إلى flex-start */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: #72DFFE; */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav i {
+    display: none;
+}
+
+.nav h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1985C5;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav li {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1985C5;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav li:hover {
+    color: #567EBB;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.lift {
+    width: 100%;
+    margin: 100px 0 0 0;
+    max-width: 800px;
+    text-align: start;
+    padding: 20px;
+}
+
+.lift h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #567EBB;
+    margin-bottom: 20px;
+}
+
+.lift h1 span {
+    color: #a2bbe193;
+}
+
+.lift p {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #bfc0cd;
+    margin-bottom: 29px;
+}
+
+.lift button {
+    font-size: 1.8rem;
+    padding: 12px 20px;
+    border-radius: 50px;
+    background-image: linear-gradient(#4f7abc, #18327d, #4f7abc);
+    border: none;
+    color: #f7e6e6b8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lift button:hover {
+    background-color: #0064faf2;
+}
+
+.aa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ico {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #fff;
+    margin: 20px;
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px #757575;
+    transition: all 1s;
+}
+
+.ico:hover {
+    width: 345px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fa-youtube {
+    color: red;
+    border-radius: 20px;
+}
+
+.fa-facebook {
+    color: blue;
+    border-radius: 20px;
+}
+
+.fa-instagram {
+    color: red;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        align-items: center;
+    }
+    .nav i {
+        display: block;
+        font-size: 2rem;
+        color: #1441c9;
+    }
+    .nav ul {
+        display: none;
+        padding: 0;
+    }
+    .nav i:hover~ul {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #c0c4d0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        justify-content: center;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .nav h2 {
+        font-size: 2rem;
+        padding-left: 20px;
+    }
+    .nav li {
+        font-size: 1.4rem;
+        padding: 10px 20px;
+    }
+    .nav li:hover {
+        color: #f5f6f8;
+        border-radius: 50px;
+        background-color: #0c0c0c;
+    }
+    .lift {
+        text-align: center;
+    }
+    .lift h1 {
+        font-size: 2.8rem;
+    }
+    .lift p {
+        font-size: 1.4rem;
+    }
+    .lift button {
+        font-size: 1.6rem;
+        padding: 10px 18px;
+    }
+    .aa {
+        flex-direction: column;
+    }
+    .ico {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #fff;
+        font-size: 25px;
+        line-height: 50px;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 5px 10px 20px #757575;
+        transition: all 1s;
+    }
+    .ico i {
+        font-size: 30px;
+        margin-top: 10px;
+        display: contents;
+    }
+    .ico:hover {
+        width: 185px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
