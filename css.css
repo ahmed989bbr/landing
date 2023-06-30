@@ -166,7 +166,7 @@ main {
         display: none;
         padding: 0;
     }
-    .nav i:hover~ul {
+    .nav i:hover + ul {
         display: block;
         display: flex;
         flex-direction: column;
