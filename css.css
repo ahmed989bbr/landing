@@ -162,8 +162,7 @@ main {
         font-size: 2rem;
         color: #1441c9;
     }
-    .nav ul {
-        
+    .nav ul {display: none;
         padding: 0;
     }
     .nav i:hover + ul {
